@@ -1,0 +1,332 @@
+{
+	"info": {
+		"_postman_id": "24f9e3c0-2c3c-47e5-b19c-1b7fad1faba7",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25235361",
+		"_collection_link": "https://lunar-robot-237584.postman.co/workspace/LinkedIn_Backend~0651807e-1386-47c2-8386-0cd636f915d5/collection/25235361-24f9e3c0-2c3c-47e5-b19c-1b7fad1faba7?action=share&source=collection_link&creator=25235361"
+	},
+	"item": [
+		{
+			"name": "Assignment_3",
+			"item": [
+				{
+					"name": "http://localhost:4000/register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Harshit Joshi\",\r\n    \"email\":\"harshitjoshi2002@gmail.com\",\r\n    \"password\":\"harrypotter7\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"harshitjoshi2002@gmail.com\",\r\n    \"password\":\"harrypotter7\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/admin/register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Admin Harshit Joshi\",\r\n    \"email\":\"harshitjoshi2002@gmail.com\",\r\n    \"password\":\"harrypotter7\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/admin/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"admin",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/admin/signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"harshitjoshi2002@gmail.com\",\r\n    \"password\":\"harrypotter7\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/admin/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"admin",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/createVehicle",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/hj280/Pictures/Screenshots/Screenshot (198).png"
+								},
+								{
+									"key": "VehicleNumber",
+									"value": "string",
+									"type": "text"
+								},
+								{
+									"key": "VehicleType",
+									"value": "Two",
+									"type": "text"
+								},
+								{
+									"key": "AssignDriver",
+									"value": "string",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/createVehicle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"createVehicle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/driver/signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"name\":\"Driver Harshit Joshi\",\r\n    \"email\":\"harshitjoshi2002@gmail.com\",\r\n    \"password\":\"harrypotter7\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/driver/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"driver",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/createDriver",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/hj280/Pictures/Screenshots/Screenshot (199).png"
+								},
+								{
+									"key": "vehicleId",
+									"value": "65d470513dfa95772a35c16c",
+									"type": "text"
+								},
+								{
+									"key": "currentlocation",
+									"value": "JJNDJBHDBHJ",
+									"type": "text"
+								},
+								{
+									"key": "driverId",
+									"value": "65d474390ca2f09a5bb1be1c",
+									"type": "text"
+								},
+								{
+									"key": "contactNumber",
+									"value": "123455677655",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/createDriver",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"createDriver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/generateLink",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"harshit.75way@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/generateLink",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"generateLink"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/resetPassword/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MDg0MjgwNTQsImV4cCI6MTcwODQ3MTI1NH0.3QKB7GoAP5beyhd2RIyhEVIdKXh5V03-GUdbOVrDhew",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"harshitjoshi2002@gmail.com\",\r\n    \"password\":\"harrypotter7\",\r\n    \"newpassword\":\"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/resetPassword/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MDg0MjgwNTQsImV4cCI6MTcwODQ3MTI1NH0.3QKB7GoAP5beyhd2RIyhEVIdKXh5V03-GUdbOVrDhew",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"resetPassword",
+								"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiQWRtaW4iLCJpYXQiOjE3MDg0MjgwNTQsImV4cCI6MTcwODQ3MTI1NH0.3QKB7GoAP5beyhd2RIyhEVIdKXh5V03-GUdbOVrDhew"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "harshitjoshi2002@gmail.com",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "harrypotter7",
+									"disabled": true
+								},
+								{
+									"key": "newpassword",
+									"value": "123456789",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
