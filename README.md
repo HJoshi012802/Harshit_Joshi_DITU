@@ -56,6 +56,10 @@ target = {
   longitude: 78.06891,
 };
 
+### Time Zone
+
+  console.log(Intl.DateTimeFormat().resolvedOptions().timeZone);
+
 options = {
   enableHighAccuracy: false,
   timeout: 5000,
